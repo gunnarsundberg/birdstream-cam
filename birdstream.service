@@ -1,0 +1,23 @@
+[Unit]
+
+Description=Birdstream camera service
+
+After=network-online.target
+
+[Service]
+
+ExecStart=/bin/bash run.sh
+
+WorkingDirectory=/home/pi/birdstream-cam
+
+StandardOutput=inherit
+
+StandardError=inherit
+
+Restart=always
+
+User=pi
+
+[Install]
+
+WantedBy=multi-user.target
