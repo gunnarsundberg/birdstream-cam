@@ -13,8 +13,8 @@ import (
 const (
 	videoWebsocketURL = "/stream"
 	port              = 8080
-	width             = 960
-	height            = 540
+	width             = 1920
+	height            = 1080
 	fps               = 30
 )
 
