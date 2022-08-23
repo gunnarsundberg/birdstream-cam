@@ -25,8 +25,8 @@ If you would like for the camera stream to always be on, use the included servic
 which pulls updates, builds, and runs on every startup.
 
 ```sh
-sudo ln-s /home/pi/birdstream-cam/birdstream.service /etc/systemd/system
+sudo ln -s /home/pi/birdstream-cam/birdstream.service /etc/systemd/system
 
-sudo systemctl enable batterylevel.service
-sudo systemctl start batterylevel.service
+sudo systemctl enable birdstream.service
+sudo systemctl start birdstream.service
 ```
